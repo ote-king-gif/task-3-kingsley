@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="modal.css">
+    <title>modal</title>
+</head>
+<body>
+<header>
+    <div class="logo">Unex</div>
+    <nav class="navbar" id="nav">
+        <a href="#Home">Home</a>
+        <a href="#About">About</a>
+        <a href="#Service">Service</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <section class="hero" id="Home">
+<h2>Transforming Ideas Into Strategic Growth.</h2>
+<p>We help businesses navigate challenges, unlock opportunities and achieve sustainable growth through expert consulting, innovative strategies and tailored business solutions</p>
+<div class="cta-btn">
+    <a href="">Explore Our Services</a>
+    <a href="">Schedule a Consultation</a>
+</div>
+    </section>
+
+    <section class="about" id="About">
+        <h2>Driving Businesses Forward Through Strategic Excellence.</h2>
+    <h3>About us</h3>
+    <p>
+We are a forward-thinking consulting firm committed to helping businesses and organisations reach their full potential.
+
+Through strategic insights, industry knowledge and practical solutions, we work closely with our clients to identify challenges, improve operations and create opportunities for long-term success.
+
+We believe that every business has the potential to grow. Our role is to provide the expertise, guidance and strategies needed to turn that potential into measurable results.</p>
+    <h3>Our Mission</h3>
+    <p>To empower businesses with innovative strategies and expert guidance that drive sustainable growth and lasting impact.</p>
+    </section>
+
+    <section class="services" id="Service">
+        <h2>Solutions Designed Around Your Business.</h2>
+        <div class="service-subhead">
+    <h3>Our Services</h3>
+    <p>We provide strategic consulting services that help businesses make informed decisions, overcome challenges and achieve their objectives</p>
+    </div>
+    
+            <ol class="steps">
+                <li>
+                    <h3>Business Strategy & Planning</h3>
+                    <p>We help businesses develop clear strategies, set achievable goals and establish effective roadmaps for sustainable growth.</p>
+                </li>
+
+            <li>
+                    <h3>Management Consulting</h3>
+                    <p>We provide expert guidance to improve organisational structures, strengthen leadership and enhance business performance.</p>
+                </li>
+
+                <li>
+                    <h3>Financial Advisory</h3>
+                    <p>We help businesses make informed financial decisions, optimise resources and identify opportunities for financial growth.</p>
+                </li>
+
+                <li>
+                    <h3>Business Development</h3>
+                    <p>We identify growth opportunities, strengthen market positioning and help businesses build strategies for expansion.</p>
+                </li>
+
+                <li>
+                    <h3>Operational Excellence</h3>
+                    <p>We analyse business processes, identify inefficiencies and implement practical solutions to improve productivity</p>
+                </li>
+
+                <li>
+                    <h3>Market Research & Analysis</h3>
+                    <p>We provide valuable market insights, industry research and competitive analysis to support smarter business decisions.</p>
+                </li>
+            </ol>
+</section>
+
+    <section class="contact" id="Contact">
+        <p>Ready to move your business forward?</p>
+        <button id="openModal">Contact us</button>
+
+<div class="overlay" id="overlay" hidden>
+  <div class="modal">
+    <button id="closeModal">&times;</button>
+    <div id="intro" hidden>
+  <h2>Send us a message</h2>
+  <p>We reply within one working day.</p>
+</div>
+    <form id="contactForm">
+        <label for="name">Name</label>
+      <input type="text"  id="name"  placeholder="Your name" required>
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+      <label for="area">Leave Us a Message</label>
+      <textarea cols="12" id="area" rows="4" required></textarea>
+
+      <button class="cta" type="submit">Send</button>
+    </form>
+
+    <div class="success" id="success" hidden>
+  <h2>Message sent</h2>
+  <p>Thanks, we'll be in touch soon.</p>
+  <button type="button" id="doneBtn">Close</button>
+</div>
+  </div>
+</div>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2026</p>
+    <p><a href="" >privacy</a>
+        <a href="">terms</a>
+        <a href="" >policy</a>
+    </p>
+</footer>
+<script src="modal.js"></script>
+</body>
+</html>
